@@ -158,10 +158,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function togglePlayPause() {
         if (isPlaying) {
             audio.pause();
-            musicPlayerImg.src = 'https://img.picui.cn/free/2024/08/27/66cd353b6accc.png';
+            musicPlayerImg.src = 'https://s21.ax1x.com/2024/08/30/pAALAsI.png';
         } else {
             audio.play();
-            musicPlayerImg.src = 'https://img.picui.cn/free/2024/08/27/66cd34563b90d.png';
+            musicPlayerImg.src = 'https://s21.ax1x.com/2024/08/30/pAALELt.png';
         }
         isPlaying = !isPlaying;
     }
@@ -275,8 +275,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // 预加载每个页面的图片
     const preloadedImages = [
         // 主页图片
-        'https://img.picui.cn/free/2024/08/27/66cd353b6accc.png',
-        'https://img.picui.cn/free/2024/08/27/66cd34563b90d.png',
+        'https://s21.ax1x.com/2024/08/30/pAALAsI.png',
+        'https://s21.ax1x.com/2024/08/30/pAALELt.png',
         // Play页面图片
         'https://s21.ax1x.com/2024/08/28/pAAuSQs.png',
         'https://s21.ax1x.com/2024/08/28/pAAnjJg.png',

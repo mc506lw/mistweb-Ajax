@@ -1,0 +1,110 @@
+.photo-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.photo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 48px;
+    color: #00d4ff;
+    margin-bottom: 20px;
+}
+
+.photo-slide-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.photo-slide-image img {
+    width: 100vh;
+    border: 4px solid #333;
+    border-radius: 5px;
+}
+
+/* 修正后的 CSS */
+.photo-nav-button.prev-button {
+    position: absolute;
+    top: 20vh;
+    left: 15vw;
+}
+
+.photo-nav-button.next-button {
+    position: absolute;
+    top: 20vh;
+    right: 15vw;
+}
+
+
+.photo-nav-button {
+    align-items: center;
+    justify-content: center;
+    height: 150px; /* 按钮高度 */
+    width: 60px; /* 按钮宽度 */
+    border: 5px solid #676767;
+    background-color: #505050;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* 添加过渡效果 */
+}
+
+.photo-nav-button .arrow {
+    font-size: 24px; /* 调整箭头大小 */
+}
+
+.photo-nav-button .label {
+    position: absolute;
+    color: #ffffff;
+    font-size: 22px;
+    background-color: #676767;
+    margin-left: -10px;
+    margin-top: 48px; /* 调整文本与箭头的间距 */
+}
+
+.photo-nav-button:hover {
+    background-color: #e0e0e0; /* 鼠标悬停时改变背景色 */
+    transform: scale(1.05); /* 鼠标悬停时略微放大按钮 */
+}
+
+.prev-button .arrow {
+    transform: translateY(0); /* 调整箭头的位置 */
+}
+
+.next-button .arrow {
+    transform: translateY(0); /* 调整箭头的位置 */
+}
+
+
+.photo-lb {
+    position: absolute;
+    top: 64vh;
+    left: 21vw;
+}
+
+.photo-number {
+    font-size: 64px;
+    color: #00d4ff;
+    left: -20px;
+}
+
+.photo-footer {
+    position: absolute;
+    font-size: 64px;
+    left: 33vw;
+    top: 63vh;
+    color: #ff4bd2;
+}
+
+.photo-slide-image img {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.photo-slide-image img.active {
+    opacity: 1;
+}

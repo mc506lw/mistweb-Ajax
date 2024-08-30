@@ -1,0 +1,169 @@
+.play-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+}
+
+.play-header h1 {
+    font-size: 64px;
+    margin-left: 20vw;
+}
+
+.play-header-right-div {
+    margin-left: 30px;
+    background-color: #59ffdb;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.play-header-right {
+    font-size: 48px;
+    text-align: center;
+    background-color: #000000;
+    top: 10px;
+    right: 10%;
+    width: 80%;
+    color: #59ffdb;
+    /* 文字颜色设置为粉色 */
+    position: absolute;
+    border-radius: 5px;
+}
+
+.play-header-right-bottom {
+    font-size: 16px;
+    bottom: 1px;
+    width: 90%;
+    left: 5%;
+    color: #000000;
+    /* 文字颜色设置为粉色 */
+    position: absolute;
+}
+
+.play-main-content {
+    display: flex;
+    background-color: #00a2ff;
+    padding: 20px;
+    position: relative;
+    width: 80vw;
+    height: 30vh;
+    margin-top: 0;
+    margin-left: 20vw;
+}
+
+.play-photo {
+    width: 40vw;
+    height: 40vh;
+    background-color: #ccc;
+    background-size: cover; /* 或 contain */
+    position: absolute;
+    top: 40px;
+    /* 让它有一定的移动 */
+    left: -40px;
+    z-index: 1;
+    /* 图片自适应大小 */
+    border-radius: 10px;
+    border: #ffffff solid 10px;
+}
+
+.play-info {
+    margin-left: 40vw;
+    /* 调整为更大占比 */
+    z-index: 0;
+    /* 确保信息层在下方 */
+    position: relative;
+}
+
+.play-info h2 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.play-info p {
+    top: 20px;
+    margin: 10px 0;
+}
+
+.play-info-line {
+    width: 40vw;
+    height: 4px;
+    margin-top: 20px;
+    margin-left: -2.5vw;
+    background-color: aqua;
+}
+
+.play-info {
+    font-size: 18px;
+}
+
+.play-date {
+    font-size: 40px;
+    margin-top: 110px;
+    margin-left: 0px;
+}
+
+.play-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .play-main-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .play-photo,
+    .play-info {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 56.25%;
+        /* 16:9 aspect ratio */
+    }
+
+    .play-photo {
+        margin-bottom: 20px;
+    }
+}
+
+.play-header-right {
+    margin-left: auto;
+}
+
+.play-info-next, .play-info-previous {
+    position: absolute;
+    transform: translateY(-50%);
+    width: 120px; /* 匹配SVG的宽度 */
+    height: 50px; /* 匹配SVG的高度 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none; /* 移除背景颜色 */
+}
+
+.play-info-next {
+    right:0px;
+    bottom: -40px;
+}
+
+.play-info-previous {
+    right:100px;
+    bottom: -40px;
+}
+
+.play-info-next svg, .play-info-previous svg {
+    width: 100%; /* 确保SVG占据整个按钮 */
+    height: 100%;
+}
+
+.play-info-next:hover, .play-info-previous:hover {
+    filter: brightness(0.9); /* 鼠标悬停时使按钮略微变暗 */
+}

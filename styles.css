@@ -1,0 +1,144 @@
+* {
+    position: relative;
+}
+
+/* 导航栏基础样式 */
+.logo {
+    color: #ffffff;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #000000;
+    display: fixed;
+    margin: 0;
+    width: 90%;
+    height: 40px;
+    z-index: 3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+nav ul {
+    width: 80%;
+    margin-left: 18%;
+    margin-top: -30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li {
+    margin-top: 0px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00ccff;
+}
+
+/* 导航栏激活状态样式 */
+nav ul li.active a {
+    color: #00ccff;
+}
+
+/* 线条标识基础样式 */
+#page-indicator {
+    position: absolute;
+    top: 53px;
+    width: 40px;
+    height: 5px;
+    background-color: #00ccff;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+/* 线条标识显示/隐藏动画 */
+#page-indicator.show {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+#page-indicator.hide {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+/* 基础布局样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    display: block;
+    cursor: default !important; /* 解决鼠标样式问题 */
+}
+
+#content {
+    position: relative;
+    padding: 20px;
+    height: calc(100vh - 120px);
+    overflow: hidden;
+    position: relative;
+}
+
+/* 页面切换动画效果 */
+.page {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    position: relative;
+}
+
+.page.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 加载动画 */
+.loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 4px solid rgba(0, 204, 255, 0.3);
+    border-top-color: #00ccff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.player {
+    right: -110px;
+    margin-top: -70px;
+    position: absolute;
+}
+
+.music-player {
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+}

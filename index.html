@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岚域官网</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="join.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="play.css">
+    <link rel="stylesheet" href="photo.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4665695_1rswl9dq6t3.css">
+</head>
+
+<body>
+    <nav>
+        <a href="#" class="logo">岚域MistMC</a>
+        <ul>
+            <li><a href="#" data-page="home">官网主页</a></li>
+            <li><a href="#" data-page="about">简单介绍</a></li>
+            <li><a href="#" data-page="play">主要玩法</a></li>
+            <li><a href="#" data-page="photo">照片美景</a></li>
+            <li><a href="#" data-page="join">加入我们</a></li>
+        </ul>
+        <!-- 四边形标识 -->
+        <div id="page-indicator"></div>
+        <div class="player">
+            <audio id="audio" src="http://music.163.com/song/media/outer/url?id=2050669890.mp3"></audio>
+            <img src="https://img.picui.cn/free/2024/08/27/66cd353b6accc.png" class="music-player" id="musicPlayer" onclick="togglePlayPause()" />
+        </div>
+    </nav>
+
+    <!-- 动态内容容器 -->
+    <div id="content">
+        <div class="loading-spinner" id="loadingSpinner"></div>
+        <div class="page" id="page1"></div>
+        <div class="page" id="page2"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="join.js"></script>
+</body>
+
+</html>

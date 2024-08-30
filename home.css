@@ -1,0 +1,107 @@
+.bottom-nav {
+    margin-top: 10px;
+    background-color: black;
+    height: 80px;
+    width: 100vw;
+    margin-left: -20px;
+    position: relative;
+}
+
+.bottom-nav a {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-left: 40px;
+    top: 13px;
+    text-decoration: none;
+}
+
+.iconfont {
+    font-size: 2rem !important;
+    color: #8d8d8d;
+}
+
+.bn-title {
+    position: absolute;
+    top: 10px;
+    left: 41vw;
+    font-size: 2.5rem;
+    color: #8d8d8d;
+}
+
+.bn-teamid {
+    position: absolute;
+    top: 5px;
+    left: 87vw;
+}
+
+.bn-teamid a {
+    font-size: 2rem;
+    color: #8d8d8d;
+}
+
+#bg-video {
+    margin-top: -30px;
+    margin-left: -20px;
+    left: 0;
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    /* 确保视频覆盖整个区域并保持比例 */
+    background: #000;
+    /* 如果视频未加载，显示背景色 */
+}
+
+.join {
+    position: absolute;
+    top: 60vh;
+    left: 37.4vw;
+    display: inline-block;
+    font-size: 64px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+    perspective: 800px;
+    /* 增加透视效果 */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    /* 添加过渡效果 */
+}
+
+.join:hover {
+    transform: scale(1.1) rotateX(10deg);
+    /* 悬停时放大并轻微旋转 */
+    opacity: 0.9;
+    /* 减少透明度 */
+}
+
+.join-title {
+    display: flex;
+    flex-direction: column;
+    background: #585858;
+    /* 使用线性渐变背景 */
+    position: relative;
+    transform: rotateX(40deg);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6),
+        4px 4px 8px rgba(0, 0, 0, 0.4),
+        6px 6px 12px rgba(0, 0, 0, 0.3),
+        8px 8px 16px rgba(0, 0, 0, 0.2);
+    /* 增强阴影效果 */
+    transform-origin: bottom;
+    padding: 10px 20px;
+    /* 增加内边距以改善文本周围的空间 */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* 添加阴影效果 */
+    transition: transform 0.3s ease, background 0.3s ease;
+    /* 添加过渡效果 */
+}
+
+.join-title:hover {
+    transform: rotateX(30deg);
+    /* 悬停时减少旋转角度 */
+}
+
+.join-title sspan {
+    font-size: 20px;
+
+}

@@ -1,0 +1,94 @@
+.join-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.join-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    background-color: #333;
+    padding: 5px 10px;
+    border: #ddd 3px solid;
+    border-radius: 5px;
+    width: 300px;
+    text-wrap: wrap;
+}
+
+.join-info p {
+    margin: 0;
+}
+
+.join-questions-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+    margin-top: 50px;
+    margin-left: 25vw;
+}
+
+.join-question {
+    width: 20vw;
+    height: 60vh;
+    background-color: #00a2ff;
+    color: white;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: #ddd 6px solid;
+}
+
+.join-question-content {
+    background-color: black;
+    padding: 20px;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+
+}
+
+.join-question-content h2{
+    text-align: center;
+    font-size: 16px;
+}
+
+.join-answer {
+    font-size: 26px;
+    color: #000000;
+}
+
+.join-server-ip {
+    position: absolute;
+    top: 65vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 64px;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.join-custom-alert {
+    position: fixed;
+    top: 78vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    display: none; /* 初始隐藏 */
+    z-index: 1000; /* 确保提示框在最上层 */
+    opacity: 0;
+    transition: opacity 0.1s;
+}
